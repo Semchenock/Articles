@@ -3,5 +3,8 @@
   "About us": "О нас",
   "Language": "Русский",
   "Main page": "Главня страница",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "Unexpected error occured": "Произошла непредвиденная ощибка",
+  "Reload page": "Перезагрузить страницу",
+  "throw new Error": "пробросить ошибку"
 }
