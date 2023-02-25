@@ -58,4 +58,12 @@ module.exports = {
     __IS_DEV__: true,
     React: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };
