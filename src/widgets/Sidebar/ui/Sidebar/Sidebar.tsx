@@ -26,7 +26,7 @@ const Sidebar = (props: SidebarProps) => {
         type="button"
         onClick={onToggle}
       >
-        toggle
+        {collapsed ? '>' : '<'}
       </button>
       <div className={cls.swithers}>
         <ThemeSwitcher />
