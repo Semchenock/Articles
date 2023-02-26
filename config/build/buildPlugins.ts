@@ -22,6 +22,7 @@ export function buildPlugins({ paths, isDev } :BuildOptions): webpack.WebpackPlu
     new ReactRefreshWebpackPlugin(),
     new BundleAnalyzerPlugin({
       openAnalyzer: false,
+      analyzerMode: isDev ? 'server' : 'disabled',
     }),
   ];
 }
