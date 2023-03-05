@@ -9,17 +9,10 @@ interface NavbarProps {
 
 const Navbar = (props: NavbarProps) => {
   const { className } = props;
-  const { t } = useTranslation();
+  
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
-      <div className={cls.links}>
-        <AppLink to="/" theme={ThemeAppLink.SECONDARY} className={cls.mainLink}>
-          {t('Main')}
-        </AppLink>
-        <AppLink to="/about" theme={ThemeAppLink.SECONDARY}>
-          {t('About us')}
-        </AppLink>
-      </div>
+      <div className={cls.links} />
     </div>
   );
 };

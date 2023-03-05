@@ -6,8 +6,25 @@
   position: relative;
 }
 
-.collapsed {
-  width: var(--sidebar-widht-collapsed);
+.items {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-top: 10px;
+  display: flex;
+}
+
+.icon {
+  fill: var(--inverted-secondary-color);
+}
+
+.link {
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
 .swithers {
@@ -20,4 +37,26 @@
 
 .lang {
   margin-left: 20px;
+}
+
+.collapsedBtn {
+  position: absolute;
+  right: -32px;
+  bottom: 32px;
+}
+
+.collapsed {
+  width: var(--sidebar-widht-collapsed);
+  .swithers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lang {
+    margin-left: 0;
+  }
+  .link {
+    opacity: 0;
+    transition: 0.2s opacity;
+    width: 0;
+  }
 }
