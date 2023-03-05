@@ -9,7 +9,7 @@ interface NavbarProps {
 
 const Navbar = (props: NavbarProps) => {
   const { className } = props;
-  
+
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
       <div className={cls.links} />
